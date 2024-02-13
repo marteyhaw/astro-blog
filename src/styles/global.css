@@ -30,6 +30,10 @@ h1 {
   width: 40px;
   height: 5px;
   margin-bottom: 10px;
+  background-color: #4c1d95;
+}
+
+.dark .hamburger .line {
   background-color: #ff9776;
 }
 
@@ -50,6 +54,7 @@ h1 {
   font-size: 1.2rem;
   font-weight: bold;
   text-transform: uppercase;
+  color: #2d3250;
 }
 
 .nav-links a:hover,
@@ -78,4 +83,26 @@ h1 {
   .hamburger {
     display: none;
   }
+}
+
+html.dark {
+  background-color: #2d3250;
+  color: #fff;
+}
+
+.dark .nav-links a {
+  color: #fff;
+}
+
+button {
+  border: 1px none;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  color: white;
+  background-color: rgba(52, 211, 153, 1);
+}
+
+button:hover {
+  background-color: rgba(16, 185, 129);
 }
