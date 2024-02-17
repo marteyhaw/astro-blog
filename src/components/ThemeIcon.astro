@@ -50,7 +50,7 @@
         return 'dark';
       }
       return 'light';
-    })();
+    })() as string;
 
     if (theme === 'light') {
       document.documentElement.classList.remove('dark');
@@ -58,7 +58,7 @@
       document.documentElement.classList.add('dark');
     }
 
-    window.localStorage.setItem('theme', String(theme));
+    window.localStorage.setItem('theme', theme);
 
     const handleToggleClick = () => {
       const element = document.documentElement;
@@ -68,9 +68,10 @@
       localStorage.setItem('theme', isDark ? 'dark' : 'light');
     };
 
-    document
-      ?.getElementById('themeToggle')
-      ?.addEventListener('click', handleToggleClick);
+    const themeToggleButton = document.getElementById(
+      'themeToggle',
+    ) as HTMLButtonElement;
+    themeToggleButton.addEventListener('click', handleToggleClick);
   });
 </script>
 
