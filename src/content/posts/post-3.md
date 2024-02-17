@@ -1,5 +1,4 @@
 ---
-layout: "../../layouts/MarkdownPostLayout.astro"
 title: "My Third Blog Post"
 pubDate: 2024-02-12
 author: "Astro Learner"
